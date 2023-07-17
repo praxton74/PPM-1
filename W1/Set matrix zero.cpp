@@ -1,9 +1,5 @@
 class Solution {
 public:
-    void setZeroes(vector<vector<int>>& matrix) 
-    {
-        class Solution {
-public:
     void setZeroes(vector<vector<int>>& matrix) {
         set<int> flag_i;
         set<int> flag_j;
@@ -28,7 +24,5 @@ public:
                 }
             }
         }
-    }
-};
     }
 };
