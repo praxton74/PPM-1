@@ -1,7 +1,3 @@
-/*
-    Problem Link: https://leetcode.com/problems/linked-list-cycle/
-*/
-
 /**
  * Definition for singly-linked list.
  * struct ListNode {
