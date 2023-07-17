@@ -1,6 +1,4 @@
-/*
-    Problem Link: https://leetcode.com/problems/middle-of-the-linked-list/
-*/
+
 
 struct ListNode {
     int val;
@@ -14,13 +12,12 @@ struct ListNode {
 ListNode *middleNode(ListNode *head) {
     ListNode *slow = head;
     ListNode *fast = head;
-    // edge case: empty / 1 node
     if(head || head->next)
         return head;
     
     while(fast && fast->next) {
-        slow = slow->next; // 1 step
-        fast = fast->next->next; // 2 steps
+        slow = slow->next; 
+        fast = fast->next->next; 
     }
     return slow;
 }
