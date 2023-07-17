@@ -1,5 +1,4 @@
 int countPaths(int sr, int sc, int dr, int dc, vector<vector<int>> &memo) {
-        // base case: the bottom right destination is reached
         if(sr == dr && sc == dc)
             return 1;
         else if(sc > dc || sr > dr)
@@ -7,7 +6,6 @@ int countPaths(int sr, int sc, int dr, int dc, vector<vector<int>> &memo) {
     
         if(memo[sr][sc] != -1)
             return memo[sr][sc];
-        // recursive calls
         int h = countPaths(sr, sc + 1, dr, dc, memo); 
         int v = countPaths(sr + 1, sc, dr, dc, memo); 
         
