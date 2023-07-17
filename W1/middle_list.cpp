@@ -10,7 +10,7 @@ struct ListNode {
 };
 
 ListNode *middleNode(ListNode *head) {
-    ListNode *slow = head;
+    ListNode *slow = head; 
     ListNode *fast = head;
     if(head || head->next)
         return head;
