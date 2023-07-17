@@ -1,17 +1,3 @@
-/*
-    for an array of size = n
-    Total number of subarrays/substrings = n(n+1)/2
-    Total number of subsequences = 2^n - 1 
-    Note: 
-        Every subarray is a subsequence.
-        Subsequences is a generalization of subarrays.
-*/
-// given an array generate all the subsequences.
-
-#include <iostream>
-#include <cmath>
-using namespace std;
-
 void allSubseq(int *arr, int n) {
     int size = pow(2, n);
     for(int i = 1; i < size; i++) {
