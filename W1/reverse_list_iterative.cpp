@@ -1,7 +1,3 @@
-/*
-    Problem Link: https://leetcode.com/problems/reverse-linked-list/
-*/
-
 struct ListNode {
     int val;
     ListNode *next;
@@ -19,7 +15,6 @@ ListNode *reverseList(ListNode *head) {
     while(C) {
         N = C->next;
         C->next = P;
-        // update pointers
         P = C;
         C = N;
     }
