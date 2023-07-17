@@ -1,7 +1,3 @@
-/*
-    Problem Link: https://leetcode.com/problems/rotate-list/description/
-*/
-
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -14,7 +10,6 @@
  */
 
 ListNode *rotateRight(ListNode *head, int k) {
-    // edge cases
     if(!head || !head->next || k == 0)
         return head;
 
@@ -24,18 +19,12 @@ ListNode *rotateRight(ListNode *head, int k) {
         len++;
         curr = curr->next;
     }
-    // curr is on the last node: connect it with the head to form a loop
     curr->next = head;
     k %= len;
     k = len - k;
-
     while(k--) 
         curr = curr->next;
-    
-    // update the head node
     head = curr->next;
-    // break the link
     curr->next = NULL;
-
     return head;
 }
