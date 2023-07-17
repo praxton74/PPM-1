@@ -8,7 +8,7 @@ class Solution{
         if(sr == n - 1 && sc == n - 1) {
             results.push_back(moves);
             return;
-        }
+        } 
         if(sr < 0 || sc < 0 || sr >= n || sc >= n || matrix[sr][sc] == 0)
             return;
         matrix[sr][sc] = 0;
