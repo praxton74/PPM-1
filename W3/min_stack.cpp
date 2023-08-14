@@ -1,11 +1,6 @@
-/*
-    Problem Link: https://leetcode.com/problems/min-stack/
-*/
-
 class MinStack {
     stack<pair<int, int>> s; // {value, min_value}
 public:
-    /** initialize your data structure here. */
     MinStack() {
         
     }
@@ -30,12 +25,3 @@ public:
         return s.top().second;
     }
 };
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack* obj = new MinStack();
- * obj->push(x);
- * obj->pop();
- * int param_3 = obj->top();
- * int param_4 = obj->getMin();
- */
