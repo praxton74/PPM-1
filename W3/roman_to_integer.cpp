@@ -1,7 +1,3 @@
-/*
-    Problem Link: https://leetcode.com/problems/roman-to-integer/
-*/
-
 class Solution {
     unordered_map<char, int> m = {
         {'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, 
